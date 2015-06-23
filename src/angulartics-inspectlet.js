@@ -31,7 +31,7 @@ angular.module('angulartics.inspectlet', ['angulartics'])
 	$analyticsProvider.registerEventTrack(function (action, properties) {
 
 		//Tag only if the action name is allowed by Inspectlet
-		if !(action == 'identify' || action == 'tagSession'){
+		if ( !(action == 'identify' || action == 'tagSession') ){
 			return;
 		}
 
